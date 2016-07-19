@@ -20,6 +20,9 @@ if(!e107::isInstalled('userlanguage_flags_menu'))
 	e107::redirect(e_BASE . 'index.php');
 }
 
+// Temporary CSS to "kill" multilan plugin dropdown from Cameron.....
+e107::css('inline', '.dropdown.multilan-language { visibility: hidden }');
+
 $pref = e107::pref('userlanguage_flags_menu'); 
 
 unset($text);
